@@ -11,18 +11,24 @@
     <h2>Nordic Soul Eureka</h2>
     <h3>Husky Siberiana</h3>
     <i>
-      Soy Palmer, una Husky Siberiana nacida en la familia de Nordic Soul Siberians.<br />
-      Me considero una perra joven muy activa y bondadosa, a la que le encanta jugar e interacturar con otros perros y humanos.<br />
+      Soy Palmer, una Husky Siberiana dela familia de Nordic Soul Siberians.<br />
+      Vivo en un pueblo de Barcelona con mi familia de humanos adoptiva. <br />
+      Me considero una perra muy activa y bondadosa, a la que le encanta jugar e interacturar con otros perros y humanos.<br />
       Si quieres descubrir más sobre mí, ¡sigue leyendo, humano!
     </i>
     <hr />
     <b>Curiosidades sobre mí</b>
-    <p>
-        El nombre de Palmer viene de un pueblo de Alaska que visitó hace tiempo uno de mis tutores. <br />
-        No soy muy cariñosa, pero adoro que mis tutores me rasquen para darme los buenos días. <br />
-        Adoro perseguir gatos. Y liebres. Y pájaros. En realidad intento cazar todo aquel ser vivo que no me saque dos cabezas.<br />
-        Lo que más me gusta en el mundo es comer y dormir. ¿He dicho ya que adoro comer?
-    </p>
+    <ul>
+        <li>El nombre de Palmer viene de un pueblo de Alaska que visitó hace tiempo uno de mis tutores.</li>
+        <li>Nací el 9 de diciembre de 2020 junto a mis dos hermanos.</li>
+        <li>Mis padres son Alai y Jean.</li>
+        <li>No soy muy cariñosa, pero adoro que mis tutores me rasquen para darme los buenos días.</li>
+        <li>Soy una expera en destrozar todos mis juguetes y en dejar la casa llena de pelos blancos.</li>
+        <li>No ladro nunca, pero cuando me pongo contenta al ver a alguien le aúllo un poquito.</li>
+        <li>No me gusta acudir a la llamada, prefiero ir suelta a investigar por mi cuenta.</li>
+        <li>Adoro perseguir gatos. Y liebres. Y pájaros. En realidad intento cazar todo aquel ser vivo que no me saque dos cabezas.</li>
+        <li>Lo que más me gusta en el mundo es comer, correr por el campo, comer, destrozar juguetes, comer y dormir. ¿He dicho ya que adoro comer?</li>
+    </ul>   
     <strong>El Husky Siberiano</strong>
     <p>
       Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit.
@@ -46,21 +52,49 @@
         velit rem,<br />
         placeat alias iusto aperiam quia, nisi eveniet ipsam illum harum error
         saepe.</p>
-      <h2>Regístrate para acceder a todo el contenido</h2>
+      <h4>Contacta conmigo (o mejor dicho, con los humanos que me cuidan):</h4>
         <form action="completed-register.html" method="post">
             <div>
                 <label for="name">Nombre</label>
-                <input id="name" name="name" type="text"></div>
+                <input required id="name" name="name" type="text" placeholder="¿Cómo te llamas?"></div>
             </div>
             <div>
-                <label for="surname">Apellidos</label>
-                <input id="surname" name="surname" type="text">
+                <label for="surname">Apellido</label>
+                <input required id="surname" name="surname" type="text" placeholder="¿Cuál es tu apellido?">
             </div>
             <div>
                 <label for="telephone">Teléfono</label>
-                <input id="telephone" name="telephone" type="tel">
+                <input required id="telephone" name="telephone" type="tel" pattern="[0-9]{9}" placeholder="¿Tu número de teléfono?">
             </div>
-            <input type="submit" value="Enviar">
+            <fieldset>
+                <legend>¿Cómo me has conocido?</legend>
+    
+                <label for="google">Buscando en Google</label>
+                <input required id="google" type="radio" name="findMe" value="google">
+    
+                <label for="paseo">Paseando por la calle</label>
+                <input required id="paseo" type="radio" name="findMe" value="paseo">
+    
+                <label for="IG">Instagram</label>
+                <input required id="IG" type="radio" name="findMe" value="IG"> 
+                
+                <label for="GitHub">En el GitHub de la humana</label>
+                <input required id="GitHub" type="radio" name="findMe" value="GitHub">
+            </fieldset>
+            <div>
+                <label for="GHUser">Usuario de GitHub</label>
+                <input id="GHUser" name="GHUser" type="text" pattern="^@[a-z0-9]+$" placeholder="Indica tu usuario de GitHub">
+            </div>
+            <div>
+                <label for="object">Asunto</label>
+                <textarea required maxlength="180" name="object" id="object" placeholder="Pregunta lo que quieras saber"></textarea>
+            </div>
+            <input type="submit" value="Enviar formulario">
         </form>
+    <hr />
+    <footer>
+        <a href="mailto:hola@palmerthehusky.com">hola@palmerthehusky.com</a>
+        <a href="Instagram">@huskyrookies</a>
+    </footer>
 </body>
 </html>
