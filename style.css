@@ -1,16 +1,162 @@
 
-:root {
-    --primary-color: #b684f8;
-    --main-cursive: italic; 
-    --secondary-color: #FFF;
-    --font-size : 12pt;
-    --font-family : sans-serif;
-    --font-weight : normal;
+/* General Settings*/
+header{
+
+
+  background-color: transparent;
 }
 
+
 body {
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+  margin: 0 0 0 0;
+  background-color:rgba(204, 186, 212, 0.808);
 }
+
+
+footer {
+  background-color: rgb(145, 8, 187);
+  height: 5em;
+  width:100%;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.navbar {
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  color:rgba(204, 186, 212, 0.808);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.navbar .menu {
+    display: none;
+}
+
+nav.navbar .link {
+  margin-left: 10px;
+}
+
+
+.skills {
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  color: black;
+  font-weight: bold
+}
+
+.skills .container{
+  width: 100;
+  background-color: #ddd;
+  display: flex;
+  justify-content: start;
+}
+
+.eating {
+  background-color: darkorchid;
+  animation: filleating 2s forwards;
+}
+
+.sleeping {
+  background-color: darkorchid;
+  animation: fillsleeping 2s forwards;
+}
+
+.jumping {
+  background-color: darkorchid;
+  animation: filljumping 2s forwards;
+}
+
+.running {
+  background-color: darkorchid;
+  animation: fillrunning 2s forwards;
+}
+
+.obeying {
+  background-color: darkorchid;
+  animation: fillobeying 2s forwards;
+}
+
+.howling {
+  background-color: darkorchid;
+  animation: fillhowling 2s forwards;
+}
+
+@keyframes filleating {
+  0%{width: 0;}
+  100%{width: 80%;}
+}
+
+@keyframes fillsleeping {
+  0%{width: 0;}
+  100%{width: 95%;}
+}
+
+@keyframes filljumping {
+  0%{width: 0;}
+  100%{width: 75%;}
+}
+
+@keyframes fillrunning{
+  0%{width: 0;}
+  100%{width: 50%;}
+}
+
+@keyframes fillobeying {
+  0%{width: 0;}
+  100%{width: 30%;}
+}
+
+@keyframes fillhowling {
+  0%{width: 0;}
+  100%{width: 15%;}
+}
+
+
+.social-footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #742166;
+  transition: color 0.3s ease-in;
+}
+
+
+
 
 @media screen and (min-width: 576px) {
   .navbar .menu {
@@ -23,6 +169,8 @@ body {
     color: rgba(174, 0, 255, 0.808);
   }
 }
+
+@media (min-width: 576px) {}
 
 
   

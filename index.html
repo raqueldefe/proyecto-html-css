@@ -9,23 +9,24 @@
 </head>
 <body>
     <header>
-        <div id="top-header"> 
+        <div class="top-header"> 
+          <div class="palmer-logo">
             <img
             src="multimedia/palmer_primer_plano.jpeg"
-            width="150px"
+            width="120px"
             title="Palmer header"
             alt="Palmer header" 
             />
+          </div>
+          
         </div> 
     </header>
-    <nav>
-      <span class="menu-button">☰</span>
-        <ul>
-            <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="#">Curiosidades sobre mí</a></li>
-            <li><a href="#">Mi Blog</a></li>
-            <li><a href="#">Mis habilidades</a></li>
-            <li><a href="#">Contacta conmigo</a></li>
+    <nav class="navbar">
+        <ul class="menu">
+            <a class="nav-link" id="nav-link-about-me" href="about-me">Curiosidades sobre mí</a>
+            <a class="nav-link" id="nav-link-blog" href="blog">Mi Blog</a>
+            <a class="nav-link" id="nav-link-skills" href="skills">Mis habilidades</a>
+            <a class="nav-link" id="nav-link-contact" href="contact">Contacta conmigo</a>
         </ul>
     </nav>
     
@@ -41,9 +42,9 @@
     <hr />
     <b>Curiosidades sobre mí</b>
     <ul>
-        <li>El nombre de Palmer viene de un pueblo de Alaska que visitó hace tiempo uno de mis tutores.</li>
+        <li>El nombre de Palmer viene de un pueblo de <a href="https://goo.gl/maps/QnM4h45HQPcnsBBdA">Alaska</a> que visitó hace tiempo uno de mis tutores.</li>
         <li>Nací el 9 de diciembre de 2020 junto a mis dos hermanos.</li>
-        <li>Mis padres son <a href="https://www.nordicsoulsiberians.com/machos" target="_blank">Alai</a> y Jean.</li>
+        <li>Mis padres son <a href="https://static.wixstatic.com/media/5fdcbb_13791d75dda34f558d5496579f838022~mv2_d_1881_1476_s_2.jpg/v1/fill/w_763,h_599,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5fdcbb_13791d75dda34f558d5496579f838022~mv2_d_1881_1476_s_2.jpg" target="_blank">Alai</a> y <a href="https://static.wixstatic.com/media/5fdcbb_a6bb1e57d8e845b2bd1516513ba68235~mv2.jpg/v1/fill/w_852,h_552,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5fdcbb_a6bb1e57d8e845b2bd1516513ba68235~mv2.jpg"target="_blank">Jean</a>.</li>
         <li>No soy muy cariñosa, pero adoro que mis tutores me rasquen para darme los buenos días.</li>
         <li>Soy una expera en destrozar todos mis juguetes y en dejar la casa llena de pelos blancos.</li>
         <li>No ladro nunca, pero cuando me pongo contenta al ver a alguien le aúllo un poquito.</li>
@@ -69,25 +70,36 @@
         quae necessitatibus?
       </p>
     </div>
-    <div>
+    <div class="skills">
         <h3>Mis habilidades</h3>
-        <ol>
-            <li>Comer</li>
-            <li>Dormir</li>
-            <li>Saltar</li>
-            <li>Correr</li>
-            <li>Obedecer</li>
-            <li>Ladrar</li>
-            <li>Socializar</li>
-        </ol>
+          <p>Comer</p>
+          <div class="container">
+            <div class="skills eating">80%</div>
+          </div>
+          <p>Dormir</p>
+          <div class="container">
+            <div class="skills sleeping">95%</div>
+          </div>
+          <p>Saltar</p>
+          <div class="container">
+            <div class="skills jumping">75%</div>
+          </div>
+          <p>Correr</p>
+          <div class="container">
+            <div class="skills running">50%</div>
+          </div>
+          <p>Obedecer</p>
+          <div class="container">
+            <div class="skills obeying">30%</div>
+          </div>
+          <p>Aullar</p>
+          <div class="container">
+            <div class="skills howling">15%</div>
+          </div>
+
     </div>
         
-      <h3>Sígueme en mis redes sociales</h3>
-      <p>Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit.
-        Nulla tempora maiores cumque necessitatibus assumenda, eligendi molestiae
-        velit rem,<br />
-        placeat alias iusto aperiam quia, nisi eveniet ipsam illum harum error
-        saepe.</p>
+      
       <h4>Contacta conmigo</h4>
         <form action="#" method="post">
             <div>
@@ -128,6 +140,20 @@
             <input type="submit" value="Enviar formulario">
         </form>
     <hr />
+    
+    <footer class="social-footer">
+      <div class="social-footer-left">
+        <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
+      </div>
+      <div class="social-footer-icons">
+        <ul class="menu simple">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </footer>
     
     
 
