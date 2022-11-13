@@ -1,0 +1,29 @@
+
+:root {
+    --primary-color: #b684f8;
+    --main-cursive: italic; 
+    --secondary-color: #FFF;
+    --font-size : 12pt;
+    --font-family : sans-serif;
+    --font-weight : normal;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .menu .link:hover {
+    color: rgba(174, 0, 255, 0.808);
+  }
+}
+
+
+  
+  

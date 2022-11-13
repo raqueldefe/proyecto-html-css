@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PALMER portfolio</title>
+    <title>PALMER portfolio 🐺</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div id="top-header"> 
+            <img
+            src="multimedia/palmer_primer_plano.jpeg"
+            width="150px"
+            title="Palmer header"
+            alt="Palmer header" 
+            />
+        </div> 
+    </header>
+    <nav>
+      <span class="menu-button">☰</span>
+        <ul>
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#">Curiosidades sobre mí</a></li>
+            <li><a href="#">Mi Blog</a></li>
+            <li><a href="#">Mis habilidades</a></li>
+            <li><a href="#">Contacta conmigo</a></li>
+        </ul>
+    </nav>
+    
     <h1>PALMER</h1>
     <h2>Nordic Soul Eureka</h2>
     <h3>Husky Siberiana</h3>
     <i>
-      Soy Palmer, una Husky Siberiana dela familia de Nordic Soul Siberians.<br />
+      Soy Palmer, una Husky Siberiana de la familia de Nordic Soul Siberians.<br />
       Vivo en un pueblo de Barcelona con mi familia de humanos adoptiva. <br />
       Me considero una perra muy activa y bondadosa, a la que le encanta jugar e interacturar con otros perros y humanos.<br />
       Si quieres descubrir más sobre mí, ¡sigue leyendo, humano!
@@ -21,7 +43,7 @@
     <ul>
         <li>El nombre de Palmer viene de un pueblo de Alaska que visitó hace tiempo uno de mis tutores.</li>
         <li>Nací el 9 de diciembre de 2020 junto a mis dos hermanos.</li>
-        <li>Mis padres son Alai y Jean.</li>
+        <li>Mis padres son <a href="https://www.nordicsoulsiberians.com/machos" target="_blank">Alai</a> y Jean.</li>
         <li>No soy muy cariñosa, pero adoro que mis tutores me rasquen para darme los buenos días.</li>
         <li>Soy una expera en destrozar todos mis juguetes y en dejar la casa llena de pelos blancos.</li>
         <li>No ladro nunca, pero cuando me pongo contenta al ver a alguien le aúllo un poquito.</li>
@@ -46,14 +68,28 @@
         maxime sit corrupti assumenda corporis, a, dolore nemo quasi quaerat
         quae necessitatibus?
       </p>
+    </div>
+    <div>
+        <h3>Mis habilidades</h3>
+        <ol>
+            <li>Comer</li>
+            <li>Dormir</li>
+            <li>Saltar</li>
+            <li>Correr</li>
+            <li>Obedecer</li>
+            <li>Ladrar</li>
+            <li>Socializar</li>
+        </ol>
+    </div>
+        
       <h3>Sígueme en mis redes sociales</h3>
       <p>Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit.
         Nulla tempora maiores cumque necessitatibus assumenda, eligendi molestiae
         velit rem,<br />
         placeat alias iusto aperiam quia, nisi eveniet ipsam illum harum error
         saepe.</p>
-      <h4>Contacta conmigo (o mejor dicho, con los humanos que me cuidan):</h4>
-        <form action="completed-register.html" method="post">
+      <h4>Contacta conmigo</h4>
+        <form action="#" method="post">
             <div>
                 <label for="name">Nombre</label>
                 <input required id="name" name="name" type="text" placeholder="¿Cómo te llamas?"></div>
@@ -83,7 +119,7 @@
             </fieldset>
             <div>
                 <label for="GHUser">Usuario de GitHub</label>
-                <input id="GHUser" name="GHUser" type="text" pattern="^@[a-z0-9]+$" placeholder="Indica tu usuario de GitHub">
+                <input id="GHUser" name="GHUser" type="text" pattern="^@[a-z0-9]+$" placeholder="@username">
             </div>
             <div>
                 <label for="object">Asunto</label>
@@ -92,9 +128,9 @@
             <input type="submit" value="Enviar formulario">
         </form>
     <hr />
-    <footer>
-        <a href="mailto:hola@palmerthehusky.com">hola@palmerthehusky.com</a>
-        <a href="Instagram">@huskyrookies</a>
-    </footer>
+    
+    
+
+      
 </body>
 </html>
